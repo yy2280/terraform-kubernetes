@@ -31,3 +31,9 @@ variable "dns_names" {
 variable "idle_timeout" {
   default = 60
 }
+
+variable "create_route53_records" {
+  description = "Whether to create Route53 records for the load balancer"
+  type        = bool
+  default     = true
+}

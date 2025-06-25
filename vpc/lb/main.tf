@@ -95,7 +95,7 @@ resource "aws_lb_listener" "listener" {
 
 /* DNS */
 resource "aws_route53_record" "route53_records" {
-  count   = length(var.dns_names)
+  count   = var.create_route53_records ? length(var.dns_names) : 0
   name    = element(var.dns_names, count.index)
   zone_id = var.route53_zone_id
   type    = "A"
