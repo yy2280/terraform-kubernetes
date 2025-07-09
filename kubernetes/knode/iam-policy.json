@@ -84,6 +84,20 @@
       "Resource": [
         "*"
       ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:ListMetrics",
+        "elasticfilesystem:DescribeFileSystems",
+        "elasticfilesystem:DescribeAccessPoints",
+        "elasticfilesystem:DescribeMountTargets"
+      ],
+      "Resource": [
+        "*"
+      ]
     }
   ]
 }
