@@ -98,6 +98,48 @@
       "Resource": [
         "*"
       ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:DescribeAlarmHistory",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:DescribeAlarmsForMetric",
+        "cloudwatch:DescribeAnomalyDetectors",
+        "cloudwatch:DescribeInsightRules",
+        "cloudwatch:GetDashboard",
+        "cloudwatch:GetInsightRuleReport",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:GetMetricStream",
+        "cloudwatch:ListDashboards",
+        "cloudwatch:ListMetricStreams",
+        "cloudwatch:ListMetrics",
+        "cloudwatch:ListTagsForResource",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:StartMetricStreams",
+        "cloudwatch:StopMetricStreams",
+        "cloudwatch:TagResource",
+        "cloudwatch:UntagResource",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:DescribeMetricFilters",
+        "logs:DescribeQueries",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeSubscriptionFilters",
+        "logs:FilterLogEvents",
+        "logs:GetLogEvents",
+        "logs:GetLogGroupFields",
+        "logs:GetLogRecord",
+        "logs:GetQueryResults",
+        "logs:ListTagsLogGroup",
+        "logs:StartQuery",
+        "logs:StopQuery",
+        "logs:TestMetricFilter"
+      ],
+      "Resource": [
+        "*"
+      ]
     }
   ]
 }
