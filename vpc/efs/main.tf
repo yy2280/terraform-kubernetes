@@ -6,7 +6,7 @@ resource "aws_efs_file_system" "efs" {
   creation_token   = var.name
   performance_mode = var.performance_mode
 
-  throughput_mode                 = var.provisioned_throughput_in_mibps == null ? "bursting" : "provisioned"
+  throughput_mode                 = var.provisioned_throughput_in_mibps == null ? "elastic" : "provisioned"
   provisioned_throughput_in_mibps = var.provisioned_throughput_in_mibps
   encrypted                       = true
 
